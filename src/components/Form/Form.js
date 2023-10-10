@@ -10,8 +10,8 @@ function Form({ addItem }) {
     
     const newItem = {
       id: Date.now(),
-      name,
-      amount,
+      name: name || '',
+      amount: amount || '',
     }
     addItem(newItem)
     console.log(newItem)

@@ -3,7 +3,7 @@ import Item from '../Item/Item';
 
 function List({ currentList, deleteItem }) {
   const groceryList = currentList.map(item => {
-    return ( 
+    return (
       <Item 
       ingredient={item.name}
       amount={item.amount}
