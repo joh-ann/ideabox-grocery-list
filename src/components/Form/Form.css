@@ -1,0 +1,30 @@
+Form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amount-input {
+  width: 25px;
+}
+
+input {
+  margin: 5px;
+  height: 30px;
+}
+
+.add-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 4px 14px;
+  text-align: center;
+  border-radius: 20px;
+  margin-left: 5px;
+  font-size: 14px;
+  height: 30px;
+}
+
+.add-button:hover {
+  background-color: #2e9d32;
+}

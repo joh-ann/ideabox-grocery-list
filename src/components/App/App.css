@@ -1,0 +1,12 @@
+input,
+button {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grocery-list {
+  text-align: center;
+}
