@@ -1,8 +1,8 @@
 import './Form.css';
 import { useState } from 'react';
 
-function Form({ addToList }) {
-  const [ingredient, setIngredient] = useState("");
+function Form({ addItem }) {
+  const [name, setIngredient] = useState("");
   const [amount, setAmount] = useState("");
 
   function addItemToList(event) {
@@ -10,10 +10,11 @@ function Form({ addToList }) {
     
     const newItem = {
       id: Date.now(),
-      ingredient,
-      amount
+      name,
+      amount,
     }
-    addToList(newItem)
+    addItem(newItem)
+    console.log(newItem)
     clearInput()
   }
   
@@ -27,8 +28,8 @@ function Form({ addToList }) {
       <input 
       type='text'
       placeholder='ingredient'
-      name='ingredient'
-      value={ingredient}
+      name='name'
+      value={name}
       onChange={event => setIngredient(event.target.value)}
       />
 

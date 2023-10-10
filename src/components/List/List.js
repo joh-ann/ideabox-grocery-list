@@ -1,15 +1,15 @@
 import './List.css';
 import Item from '../Item/Item';
 
-function List({ list, deleteMe }) {
-  const groceryList = list.map(item => {
+function List({ currentList, deleteItem }) {
+  const groceryList = currentList.map(item => {
     return ( 
       <Item 
-      ingredient={item.ingredient}
+      ingredient={item.name}
       amount={item.amount}
       id={item.id}
       key={item.id}
-      deleteItem={deleteMe} // we pass deleteItem here to allow the item to delete itself
+      deleteItem={deleteItem} // we pass deleteItem here to allow the item to delete itself
       />
     )
   })
